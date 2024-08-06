@@ -1,119 +1,119 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
-    background-image: url(/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
+  background-image: url(/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
 }
 
 .section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: #fff; */
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 50px;
+
+  .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* color: #fff; */
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
-    gap: 50px;
+    flex-direction: column;
+    gap: 10px;
 
-    .container {
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: #fff;
+      .btn {
         display: flex;
-        flex-direction: column;
         gap: 10px;
-
-        .text {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            color: #fff;
-            .btn {
-                display: flex;
-                gap: 10px;
-                margin-top: 40px;
-                button {
-                    padding: 10px 20px;
-                    border-radius: 20px;
-                    background-color: rgb(red, green, blue);
-                }
-
-                .btn1 {
-                    display: flex;
-                    gap: 10px;
-                    margin-top: 40px;
-                    padding: 10px 20px;
-                    border-radius: 20px;
-                    background: #fff;
-                    color: red;
-                    transition: 1s;
-                    &:hover {
-                        color: red;
-                        background: #000;
-                    }
-                }
-
-                .btn2 {
-                    display: flex;
-                    gap: 10px;
-                    margin-top: 40px;
-                    padding: 10px 20px;
-                    border-radius: 20px;
-                    transition: 1s;
-                    &:hover {
-                        color: #000;
-                        background: red;
-                    }
-                }
-            }
+        margin-top: 40px;
+        button {
+          padding: 10px 20px;
+          border-radius: 20px;
+          background-color: rgb(red, green, blue);
         }
-    }
 
-    .img {
-        width: 400px;
+        .btn1 {
+          display: flex;
+          gap: 10px;
+          margin-top: 40px;
+          padding: 10px 20px;
+          border-radius: 20px;
+          background: #fff;
+          color: red;
+          transition: 1s;
+          &:hover {
+            color: red;
+            background: #000;
+          }
+        }
+
+        .btn2 {
+          display: flex;
+          gap: 10px;
+          margin-top: 40px;
+          padding: 10px 20px;
+          border-radius: 20px;
+          transition: 1s;
+          &:hover {
+            color: #000;
+            background: red;
+          }
+        }
+      }
     }
+  }
+
+  .img {
+    width: 400px;
+  }
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  margin: 30px auto 100px;
+
+  img {
+    width: 50px;
+  }
+
+  .fan {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
-    margin: 30px auto 100px;
+    gap: 50px;
 
-    img {
-        width: 50px;
+    a {
+      font-weight: 900;
+      font-size: 20px;
+      color: rgb(0, 170, 164);
+      transition: 0.5s;
+      &:hover {
+        color: red;
+      }
     }
+  }
 
-    .fan {
-        display: flex;
-        gap: 50px;
-
-        a {
-            font-weight: 900;
-            font-size: 20px;
-            color: rgb(0, 170, 164);
-            transition: 0.5s;
-            &:hover {
-                color: red;
-            }
-        }
+  .sign {
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(0, 170, 164);
+    transition: 0.5s;
+    &:hover {
+      color: red;
     }
-
-    .sign {
-        font-weight: 900;
-            font-size: 20px;
-            color: rgb(0, 170, 164);
-            transition: 0.5s;
-            &:hover {
-                color: red;
-            }
-    }
+  }
 }
